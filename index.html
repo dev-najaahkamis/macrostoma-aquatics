@@ -42,18 +42,21 @@
 
   <!-- ======= Mobile nav toggle button ======= -->
   <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
-  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+  <i class="bi bi-list mobile-nav-toggle d-lg-none text-light"></i>
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex flex-column justify-content-center">
 
     <nav id="navbar" class="navbar nav-menu">
       <ul>
         <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a>
+        <li><a href="#brunei-beauty" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Brunei Beauty</span></a>
         </li>
-        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
+        <li><a href="#about-us" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>About Us</span></a>
+        </li>
+        <li><a href="#conservation" class="nav-link scrollto"><i class="bx bx-book-content"></i>
+            <span>Participate</span></a>
+        </li>
+        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Paludarium</span></a></li>
         <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
       </ul>
     </nav><!-- .nav-menu -->
@@ -66,7 +69,8 @@
       <div class="text-center pb-4">
         <img class="img-fluid p-4 p-sm-0" src="./assets/img/logo.png" alt="">
       </div>
-      <p class="text-light m-0 mt-sm-4">Macrostoma Aquatics is a dedicated and passionate small-scale company committed
+      <p class="text-light m-0 mt-sm-4">
+        Macrostoma Aquatics is a dedicated and passionate small-scale company committed
         to the sconservation and
         preservation of the endangered Betta Macrostoma fish. Established with a profound love for aquatic life, our
         objective is to contribute significantly to the conservation efforts of this unique and threatened species while
@@ -79,9 +83,8 @@
   </section><!-- End Hero -->
 
   <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <!-- ======= Brunei Beauty Section ======= -->
+    <section id="brunei-beauty" class="brunei-beauty">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -89,557 +92,390 @@
         </div>
 
         <div class="row gx-4">
-          <div class="col-sm-6 pe-sm-5">
+          <div class="col-md-6 pe-sm-5">
             <p>Betta Macrostoma, commonly known as the Brunei Beauty or Spotfin Betta, is a medium-sized species of
               freshwater fish. Adult specimens typically reach sizes between 2 to 3 inches (5 to 8 centimeters) in
-              length.
-            </p>
+              length.s</p>
             <p>Native to the island of Borneo in Southeast Asia, Betta Macrostoma is specifically found in the Sultanate
               of Brunei and Malaysian state of Sarawak. This species inhabits slow-moving or stagnant waters in its
               natural environment.
             </p>
           </div>
-          <div class="col-sm-6">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/aRKQCljWuCM?si=8gjOSGBvyqdUpfsC"
-              title="YouTube video player" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
+          <div class="col-md-6">
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/aRKQCljWuCM?si=8gjOSGBvyqdUpfsC" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
           </div>
         </div>
 
+        <ul class="nav nav-pills d-flex justify-content-center gap-3 py-5" id="pills-tab" role="tablist">
+          <li class="nav-item text-center" role="presentation">
+            <button class="nav-link active rounded-pill" id="pills-breeding-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-breeding" type="button" role="tab" aria-controls="pills-breeding"
+              aria-selected="true">Breeding Behaviour</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link rounded-pill" id="pills-profile-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+              aria-selected="false">Natural Environtment</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link rounded-pill" id="pills-contact-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+              aria-selected="false">Environmental Status</button>
+          </li>
+        </ul>
+
+
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-breeding" role="tabpanel"
+            aria-labelledby="pills-breeding-tab">
+            <p class="mb-0">The breeding process of Betta Macrostoma.</p>
+            <div class="row gy-3 mt-3 mb-4">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <p class="text-secondary fw-bold">1. Male&apos;s Courtship Display</p>
+                    <p>Males perform a courtship display, characterized by erecting fins and bending their bodies,
+                      showcasing improved skills as they reach adulthood. The display aims to impress the female and
+                      induce spawning behavior.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <p class="text-secondary fw-bold">2. Female&apos;s Courtship Display</p>
+                    <p>After a period of dormancy, the female undergoes a significant color
+                      change, losing reddish-pink tones and developing horizontal black lines. She performs a dance-like
+                      courtship display, signaling her readiness to mate.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <p class="text-secondary fw-bold">3. Spawning Embraces</p>
+                    <p>The actual spawning embraces have a low success rate, with less than 20%
+                      resulting in fertilization. Embraces include both practice runs and the release of eggs and sperm,
+                      with the male's anal fin acting as a platform for the eggs.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <p class="text-secondary fw-bold">4. Egg Transfer</p>
+                    <p>After successful embraces, the female transfers the eggs to the male, who catches them in his
+                      mouth. This process continues until the female exhausts her eggs.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <p class="text-secondary fw-bold">5. Oral Incubation </p>
+                    <p>The male holds the fertilized eggs in his mouth for an incubation period lasting 15-30 days. This
+                      stage is crucial and challenging, with many males failing to hold the eggs to term.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <p class="text-secondary fw-bold">6. Release of Fry</p>
+                    <p>If incubation is successful, the male releases fully formed and free-swimming fry. The timing of
+                      fry release varies among males, occurring between 17 to 24 days. Fry are larger in size compared
+                      to other Betta species.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p>Additionally, the breeder must consider the female's behavior post-spawning to decide whether she should
+              be removed from the tank. Factors such as the male's experience and the female's personality influence the
+              success of the breeding process. The fishkeeper should be patient and observant during the incubation
+              period, ensuring the male doesn't get spooked, and be cautious about potential issues like the male
+              swallowing the eggs prematurely. After fry release, the tank undergoes a thorough cleaning, and the male
+              is reintroduced to regular feeding gradually. Betta macrostoma are not picky eaters, accepting various
+              foods.</p>
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="row gx-4">
+              <div class="col-sm-6">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/aRKQCljWuCM?si=8gjOSGBvyqdUpfsC"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="col-sm-6 pe-sm-5">
+                <p>Betta Macrostoma, commonly known as the Brunei Beauty or Spotfin Betta, is a medium-sized species of
+                  freshwater fish. Adult specimens typically reach sizes between 2 to 3 inches (5 to 8 centimeters) in
+                  length.s</p>
+                <p>Native to the island of Borneo in Southeast Asia, Betta Macrostoma is specifically found in the
+                  Sultanate
+                  of Brunei and Malaysian state of Sarawak. This species inhabits slow-moving or stagnant waters in its
+                  natural environment.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <p>Betta Macrostoma is currently classified as an endangered species, facing threats primarily due to
+              habitat loss and degradation. The conversion of natural habitats for agriculture, logging, and urban
+              development poses a significant risk to the survival of this species. Additionally, pollution and
+              collection for the aquarium trade contribute to the decline in wild populations. </p>
+            <p>Conservation efforts, including responsible breeding practices and habitat preservation, are crucial for
+              the long-term survival of Betta Macrostoma and its ecosystems. Initiatives such as those undertaken by
+              Macrostoma Aquatics aim to raise awareness and actively contribute to the conservation of this unique and
+              endangered species.</p>
+          </div>
+        </div>
 
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Facts Section ======= -->
-    <section id="facts" class="facts">
+    <!-- ======= About Us ======= -->
+    <!-- ABOUT US HERO -->
+    <section id="about-us" class="about-us">
       <div class="container" data-aos="fade-up">
-
-      </div>
-    </section><!-- End Facts Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container" data-aos="fade-up">
-
         <div class="section-title">
-          <h2>Skills</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
+          <h2 class="text-light">About Macrostoma Aquatics</h2>
         </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">HTML <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">PHP <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">WordPress/CMS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Photoshop <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>About Macrostoma Aquatics</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Brandon Johnson</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and
-                  developing user-centered digital/print marketing material from initial concept to final, polished
-                  deliverable.</em></p>
-              <ul>
-                <li>Portland par 127,Orlando, FL</li>
-                <li>(123) 456-7891</li>
-                <li>alice.barkley@example.com</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui
-                ut dignissimos deleniti nerada porti sand markend</p>
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius
-                unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart
-                dila</p>
+        <div class="row gx-5">
+          <div class="col-md-6">
+            <div class="video-container">
+              <iframe src="https://www.youtube.com/embed/aRKQCljWuCM?si=8gjOSGBvyqdUpfsC" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
             </div>
           </div>
-          <div class="col-lg-6">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
-              <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production
-                  communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the
-                  project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the
-                  design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
-              <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and
-                  advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Resume Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+          <div class="col-md-6">
+            <ul class="list-unstyled text-light mb-5">
+              <li class="mb-2"><i class="bi bi-chevron-right text-primary" style="font-weight: bold;"></i>
+                <strong>Name:</strong>
+                <span class="ms-3">Macrostoma Aquatics</span>
+              </li>
+              <li class="mb-2"><i class="bi bi-chevron-right text-primary"></i> <strong>Founded:</strong>
+                <span class="ms-3">2023</span>
+              </li>
+              <li class="mb-2"><i class="bi bi-chevron-right text-primary"></i> <strong>Location:</strong> <span
+                  class="ms-3">Bandar
+                  Seri Begawan,
+                  Brunei Darussalam</span>
+              </li>
+              <li class="mb-2"><i class="bi bi-chevron-right text-primary"></i> <strong>Nature of business:</strong>
+                <span class="ms-3">Breeding
+                  and Conservation of Betta Macrostoma</span>
+              </li>
             </ul>
+            <p class="text-light">Macrostoma Aquatics is a dedicated and passionate small-scale company committed to the
+              conservation and
+              preservation of the endangered Betta Macrostoma fish. Established with a profound love for aquatic life,
+              our mission is to contribute significantly to the conservation efforts of this unique and threatened
+              species while fostering awareness about the importance of biodiversity.</p>
           </div>
         </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external"
-                    title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external"
-                    title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external"
-                    title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 2</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external"
-                    title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 2</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external"
-                    title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>App</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external"
-                    title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 1</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external"
-                    title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Card 3</h4>
-                <p>Card</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external"
-                    title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery"
-                    class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external"
-                    title="Portfolio Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
       </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
+    </section>
+    <!-- END ABOUT US HERO -->
+    <!-- MISSION -->
+    <section class="about-us-content">
+      <div class="container">
+        <div class="card p-3 mb-5 about-us-quote">
+          <div class="card-body">
+            <h4 class="text-primary text-center fw-bold mb-3"><img class="me-2 align-center"
+                src="assets/icon/mission.svg" alt="">MISSION
+            </h4>
+            <p class="text-center">
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              The primary objective of our conservation programme is to contribute to the sustainability and well-being
+              of Betta Macrostoma in the aquarium hobby. By engaging experienced fishkeepers, we aim to foster a
+              community dedicated to the careful breeding and nurturing of these magnificent creatures.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
         </div>
 
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box iconbox-blue">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,521.0016835830174C376.1290562159157,517.8887921683347,466.0731472004068,529.7835943286574,510.70327084640275,468.03025145048787C554.3714126377745,407.6079735673963,508.03601936045806,328.9844924480964,491.2728898941984,256.3432110539036C474.5976632858925,184.082847569629,479.9380746630129,96.60480741107993,416.23090153303,58.64404602377083C348.86323505073057,18.502131276798302,261.93793281208167,40.57373210992963,193.5410806939664,78.93577620505333C130.42746243093433,114.334589627462,98.30271207620316,179.96522072025542,76.75703585869454,249.04625023123273C51.97151888228291,328.5150500222984,13.704378332031375,421.85034740162234,66.52175969318436,486.19268352777647C119.04800174914682,550.1803526380478,217.28368757567262,524.383925680826,300,521.0016835830174">
-                  </path>
-                </svg>
-                <i class="bx bxl-dribbble"></i>
-              </div>
-              <h4><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            </div>
+        <!-- VISION -->
+        <div class="card p-3 mb-5 about-us-quote">
+          <div class="card-body">
+            <h4 class="text-primary text-center fw-bold mb-3">
+              <img class="me-2" src="assets/icon/vision.svg" alt=""><span style="vertical-align: middle;">VISION</span>
+            </h4>
+            <p class="text-center">
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              The primary objective of our conservation programme is to contribute to the sustainability and well-being
+              of Betta Macrostoma in the aquarium hobby. By engaging experienced fishkeepers, we aim to foster a
+              community dedicated to the careful breeding and nurturing of these magnificent creatures.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
           </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
-            data-aos-delay="200">
-            <div class="icon-box iconbox-orange ">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,582.0697525312426C382.5290701553225,586.8405444964366,449.9789794690241,525.3245884688669,502.5850820975895,461.55621195738473C556.606425686781,396.0723002908107,615.8543463187945,314.28637112970534,586.6730223649479,234.56875336149918C558.9533121215079,158.8439757836574,454.9685369536778,164.00468322053177,381.49747125262974,130.76875717737553C312.15926192815925,99.40240125094834,248.97055460311594,18.661163978235184,179.8680185752513,50.54337015887873C110.5421016452524,82.52863877960104,119.82277516462835,180.83849132639028,109.12597500060166,256.43424936330496C100.08760227029461,320.3096726198365,92.17705696193138,384.0621239912766,124.79988738764834,439.7174275375508C164.83382741302287,508.01625554203684,220.96474134820875,577.5009287672846,300,582.0697525312426">
-                  </path>
-                </svg>
-                <i class="bx bx-file"></i>
-              </div>
-              <h4><a href="">Sed Perspiciatis</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
-            data-aos-delay="300">
-            <div class="icon-box iconbox-pink">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781">
-                  </path>
-                </svg>
-                <i class="bx bx-tachometer"></i>
-              </div>
-              <h4><a href="">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box iconbox-yellow">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,503.46388370962813C374.79870501325706,506.71871716319447,464.8034551963731,527.1746412648533,510.4981551193396,467.86667711651364C555.9287308511215,408.9015244558933,512.6030010748507,327.5744911775523,490.211057578863,256.5855673507754C471.097692560561,195.9906835881958,447.69079081568157,138.11976852964426,395.19560036434837,102.3242989838813C329.3053358748298,57.3949838291264,248.02791733380457,8.279543830951368,175.87071277845988,42.242879143198664C103.41431057327972,76.34704239035025,93.79494320519305,170.9812938413882,81.28167332365135,250.07896920659033C70.17666984294237,320.27484674793965,64.84698225790005,396.69656628748305,111.28512138212992,450.4950937839243C156.20124167950087,502.5303643271138,231.32542653798444,500.4755392045468,300,503.46388370962813">
-                  </path>
-                </svg>
-                <i class="bx bx-layer"></i>
-              </div>
-              <h4><a href="">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box iconbox-red">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,532.3542879108572C369.38199826031484,532.3153073249985,429.10787420159085,491.63046689027357,474.5244479745417,439.17860296908856C522.8885846962883,383.3225815378663,569.1668002868075,314.3205725914397,550.7432151929288,242.7694973846089C532.6665558377875,172.5657663291529,456.2379748765914,142.6223662098291,390.3689995646985,112.34683881706744C326.66090330228417,83.06452184765237,258.84405631176094,53.51806209861945,193.32584062364296,78.48882559362697C121.61183558270385,105.82097193414197,62.805066853699245,167.19869350419734,48.57481801355237,242.6138429142374C34.843463184063346,315.3850353017275,76.69343916112496,383.4422959591041,125.22947124332185,439.3748458443577C170.7312796277747,491.8107796887764,230.57421082200815,532.3932930995766,300,532.3542879108572">
-                  </path>
-                </svg>
-                <i class="bx bx-slideshow"></i>
-              </div>
-              <h4><a href="">Dele Cardo</a></h4>
-              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box iconbox-teal">
-              <div class="icon">
-                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                  <path stroke="none" stroke-width="0" fill="#f5f5f5"
-                    d="M300,566.797414625762C385.7384707136149,576.1784315230908,478.7894351017131,552.8928747891023,531.9192734346935,484.94944893311C584.6109503024035,417.5663521118492,582.489472248146,322.67544863468447,553.9536738515405,242.03673114598146C529.1557734026468,171.96086150256528,465.24506316201064,127.66468636344209,395.9583748389544,100.7403814666027C334.2173773831606,76.7482773500951,269.4350130405921,84.62216499799875,207.1952322260088,107.2889140133804C132.92018162631612,134.33871894543012,41.79353780512637,160.00259165414826,22.644507872594943,236.69541883565114C3.319112789854554,314.0945973066697,72.72355303640163,379.243833228382,124.04198916343866,440.3218312028393C172.9286146004772,498.5055451809895,224.45579914871206,558.5317968840102,300,566.797414625762">
-                  </path>
-                </svg>
-                <i class="bx bx-arch"></i>
-              </div>
-              <h4><a href="">Divera Don</a></h4>
-              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-            </div>
-          </div>
-
         </div>
 
+        <!-- KEY OBJECTIVES -->
+        <h4 class="text-primary text-center fw-bold mb-4"><img class="me-2 align-center"
+            src="assets/icon/key_objectives.svg" alt=""><span style="vertical-align: middle;">KEY OBJECTIVES</span>
+        </h4>
+        <div class="row gy-3 mb-5">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="card">
+              <div class="card-body">
+                <p class="text-secondary fw-bold mb-4">Breeding Excellence</p>
+                <p>Strive for excellence in breeding practices, ensuring the health and genetic diversity of Betta
+                  Macrostoma.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="card">
+              <div class="card-body">
+                <p class="text-secondary fw-bold mb-4">Conservation Advocacy</p>
+                <p>Actively participate in and support conservation initiatives, raising awareness about the importance
+                  of preserving endangered aquatic species.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="card">
+              <div class="card-body">
+                <p class="text-secondary fw-bold mb-4">Education and Outreach</p>
+                <p>Engage with the community through educational programs, workshops, and outreach activities to promote
+                  awareness and understanding of aquatic conservation
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="card">
+              <div class="card-body">
+                <p class="text-secondary fw-bold mb-4">Research and Development</p>
+                <p>Conduct research to better understand the biology and behavior of Betta Macrostoma, contributing
+                  valuable insights to the scientific community.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CORE VALUES -->
+        <h4 class="text-primary text-center fw-bold mb-4"><img class="me-2 align-center" src="assets/icon/core.svg"
+            alt=""><span style="vertical-align: middle;">CORE VALUES</span>
+        </h4>
+        <div class="row gy-3 d-flex justify-content-center">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="card">
+              <div class="card-body">
+                <p class="text-secondary fw-bold mb-4">Conservation Advocacy</p>
+                <p>Actively participate in and support conservation initiatives, raising awareness about the importance
+                  of preserving endangered aquatic species.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="card">
+              <div class="card-body">
+                <p class="text-secondary fw-bold mb-4">Education and Outreach</p>
+                <p>Engage with the community through educational programs, workshops, and outreach activities to promote
+                  awareness and understanding of aquatic conservation
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="card">
+              <div class="card-body">
+                <p class="text-secondary fw-bold mb-4">Research and Development</p>
+                <p>Conduct research to better understand the biology and behavior of Betta Macrostoma, contributing
+                  valuable insights to the scientific community.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section><!-- End Services Section -->
+    </section>
 
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container" data-aos="fade-up">
+    <!-- ======= Contact Section ======= -->
+    <section id="conservation" class="conservation pt-0 mt-5">
+      <div class="conservation-hero">
+        <div class="container">
+          <div class="row py-5">
+            <div class="col-md-6">
+              <h3 class="fw-bold conservation-hero-title">Welcome to the Brunei Beauty <br><span
+                  class="text-primary">Conservation Programme </span>
+                by <br>Macrostoma
+                Aquatics!</h3>
+              <p class="pt-5">At Macrostoma Aquatics, we are passionate about the conservation and responsible
+                stewardship of the Betta Macrostoma species. As experienced fishkeepers, we understand the importance of
+                preserving these unique and captivating fish for future generations. Our Betta Macrostoma Conservation
+                Programme is designed to involve fellow enthusiasts in this meaningful endeavor</p>
 
-        <div class="section-title">
-          <h2>Testimonials</h2>
-        </div>
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
-                  quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
-                  quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim
-                  tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit
-                  minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa
-                  labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div><!-- End testimonial item -->
-
+            </div>
+            <div class="col-md-6">
+              <img class="text-end img-fluid" src="assets/img/conservation.svg" alt="">
+            </div>
           </div>
-          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="container py-3">
+        <div class="mb-5">
+          <h3 class="conservation-title">Our mission</h3>
+          <p>
+            The primary objective of our conservation programme is to contribute to the sustainability and well-being of
+            Betta Macrostoma in the aquarium hobby. By engaging experienced fishkeepers, we aim to foster a community
+            dedicated to the careful breeding and nurturing of these magnificent creatures.
+          </p>
         </div>
 
-      </div>
-    </section><!-- End Testimonials Section -->
 
+        <h3 class="conservation-title">How it works</h3>
+        <div class="conservation-item">
+          <h4>1. Apply for participation</h4>
+          <ul>
+            <li>Experienced fishkeepers with a passion for Betta Macrostoma are invited to apply for our programme.</li>
+            <li>Submit your application, sharing your expertise and commitment to responsible fishkeeping.</li>
+          </ul>
+        </div>
+        <div class="conservation-item">
+          <h4>2. Selection Process:</h4>
+          <ul>
+            <li>Experienced fishkeepers with a passion for Betta Macrostoma are invited to apply for our programme.</li>
+            <li>Submit your application, sharing your expertise and commitment to responsible fishkeeping.</li>
+          </ul>
+        </div>
+        <div class="conservation-item">
+          <h4>3. Receive Betta Macrostoma Fry</h4>
+          <ul>
+            <li>Experienced fishkeepers with a passion for Betta Macrostoma are invited to apply for our programme.</li>
+            <li>Submit your application, sharing your expertise and commitment to responsible fishkeeping.</li>
+          </ul>
+        </div>
+        <div class="conservation-item">
+          <h4>4. Cultivate Responsible Fishkeeping</h4>
+          <ul>
+            <li>Experienced fishkeepers with a passion for Betta Macrostoma are invited to apply for our programme.</li>
+            <li>Submit your application, sharing your expertise and commitment to responsible fishkeeping.</li>
+          </ul>
+        </div>
+        <div class="conservation-item">
+          <h4>5. Share Your Journey</h4>
+          <ul>
+            <li>Experienced fishkeepers with a passion for Betta Macrostoma are invited to apply for our programme.
+            </li>
+            <li>Submit your application, sharing your expertise and commitment to responsible fishkeeping.</li>
+          </ul>
+        </div>
+      </div>
+
+
+    </section>
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
@@ -711,7 +547,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <h3>Brandon Johnson</h3>
+      <h3>Macrostoma Aquatics</h3>
       <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
       <div class="social-links">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
