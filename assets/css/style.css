@@ -43,7 +43,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #0563bb;
+  background: #EB8047;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -57,7 +57,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #0678e3;
+  background: #e06727;
   color: #fff;
 }
 
@@ -183,7 +183,7 @@ h6 {
 
 .nav-menu a i,
 .nav-menu a:focus i {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .nav-menu a span,
@@ -510,43 +510,43 @@ section {
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
-#about-us {
+#about-us-hero {
   width: 100%;
-  background: url("../img/about-bg.png") top right no-repeat;
+  background: url("../img/about-bg-2.png") top right no-repeat;
   background-size: cover;
   position: relative;
 }
 
-.about-us-content .about-us-quote {
+.about-us-quote {
   text-align: center;
 }
 
-.about-us-content .about-us-quote .quote-icon-left,
-.about-us-content .about-us-quote .quote-icon-right {
+.about-us-quote .quote-icon-left,
+.about-us-quote .quote-icon-right {
   color: #454343;
   font-size: 26px;
 }
 
-.about-us-content .about-us-quote .quote-icon-left {
+.about-us-quote .quote-icon-left {
   display: inline-block;
   left: -5px;
   position: relative;
 }
 
-.about-us-content .about-us-quote .quote-icon-right {
+.about-us-quote .quote-icon-right {
   display: inline-block;
   right: -5px;
   position: relative;
   top: 10px;
 }
 
-.about-us-content .about-us-quote p {
+.about-us-quote p {
   font-style: italic;
   margin: 0 auto 15px auto;
 }
 
 @media (min-width: 992px) {
-  .about-us-content .about-us-quote p {
+  .about-us-quote p {
     width: 80%;
   }
 }
@@ -634,11 +634,90 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Paladarium
+--------------------------------------------------------------*/
+.paludarium .paludarium-hero {
+  background-color: #f7f8f9;
+}
+
+.paludarium .paludarium-hero .paludarium-hero-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #45505b;
+}
+
+.paludarium .paludarium-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #45505b;
+}
+
+
+.paludarium .paludarium-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #45505B;
+  position: relative;
+}
+
+.paludarium .paludarium-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #34A08D;
+  margin-bottom: 10px;
+}
+
+.paludarium .paludarium-item h5 {
+  font-size: 16px;
+  background: #f7f8f9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.paludarium .paludarium-item ul {
+  padding-left: 20px;
+}
+
+.paludarium .paludarium-item ul li {
+  padding-bottom: 10px;
+}
+
+.paludarium .paludarium-item:last-child {
+  padding-bottom: 0;
+}
+
+.paludarium .paludarium-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #45505B;
+}
+
+/*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact {
+  background: #f7f8f9;
+  ;
+}
+
 .contact .info {
   width: 100%;
-  background: #fff;
+
 }
 
 .contact .info i {
@@ -684,7 +763,7 @@ section {
 
 .contact .php-email-form {
   width: 100%;
-  background: #fff;
+
 }
 
 .contact .php-email-form .form-group {
@@ -749,7 +828,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #0563bb;
+  background: #EB8047;
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -758,7 +837,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #0678e3;
+  background: #EB8047;
 }
 
 @keyframes animate-loading {

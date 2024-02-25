@@ -22,6 +22,9 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
@@ -48,16 +51,26 @@
 
     <nav id="navbar" class="navbar nav-menu">
       <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#brunei-beauty" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Brunei Beauty</span></a>
+        <li><a href="#hero" class="nav-link scrollto active"><i
+              class="fa-solid fa-house fa-sm"></i><span>Home</span></a></li>
+        <li><a href="#brunei-beauty" class="nav-link scrollto"><i class="fa-solid fa-fish fa-xs"></i><span>Brunei
+              Beauty</span></a>
         </li>
-        <li><a href="#about-us" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>About Us</span></a>
+        <li><a href="#about-us" class="nav-link scrollto"><i class="fa-regular fa-user fa-sm"></i><span>About
+              Us</span></a>
         </li>
-        <li><a href="#conservation" class="nav-link scrollto"><i class="bx bx-book-content"></i>
-            <span>Participate</span></a>
+        <li><a href="#conservation" class="nav-link scrollto"><i
+              class="fa-solid fa-file-export fa-sm"></i><span>Participate</span></a>
         </li>
-        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Paludariums</span></a></li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        <li><a href="#paludarium" class="nav-link scrollto"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+              height="24" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="M19.11 5H21V3H3v2h1.89A9.93 9.93 0 0 0 2 12c0 3.97 2.31 7.39 5.66 9h8.68A9.973 9.973 0 0 0 22 12c0-2.73-1.11-5.2-2.89-7M6.32 6.41L7.7 5h8.6l1.38 1.41a7.87 7.87 0 0 1 1.37 1.84A7.272 7.272 0 0 1 16 7c-2.44 1.71-5.56 1.71-8 0c-.94.66-2 1.09-3.05 1.25c.36-.67.82-1.29 1.37-1.84M15.85 19h-7.7A7.93 7.93 0 0 1 4 12c0-.57.07-1.14.19-1.68A8.74 8.74 0 0 0 8 9.33c2.5 1.3 5.5 1.3 8 0c1.2.62 2.5.96 3.81.99c.12.54.19 1.11.19 1.68a7.93 7.93 0 0 1-4.15 7M17 14.5c0 1.38-1.68 2.5-3.75 2.5c-1.16 0-2.19-.36-2.92-.84c-.66.84-2 .84-3.33.84c1.1 0 1.5-1.12 1.5-2.5S8.1 12 7 12c1.33 0 2.67 0 3.37.91c.69-.55 1.72-.91 2.88-.91c2.07 0 3.75 1.12 3.75 2.5" />
+            </svg><span>Paludariums</span></a>
+        </li>
+        <li><a href="#contact" class="nav-link scrollto"><i
+              class="fa-regular fa-envelope fa-sm"></i><span>Contact</span></a>
+        </li>
       </ul>
     </nav><!-- .nav-menu -->
 
@@ -235,82 +248,85 @@
         </div>
 
       </div>
-    </section><!-- End About Section -->
+    </section>
 
     <!-- ======= About Us ======= -->
     <!-- ABOUT US HERO -->
     <section id="about-us" class="about-us">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2 class="text-light">About Macrostoma Aquatics</h2>
-        </div>
-        <div class="row gx-5">
-          <div class="col-md-6">
-            <div class="video-container">
-              <iframe src="https://www.youtube.com/embed/aRKQCljWuCM?si=8gjOSGBvyqdUpfsC" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-            </div>
+      <div class="about-us-hero py-5" id="about-us-hero" data-aos="fade-up">
+        <div class="container">
+          <div class="section-title">
+            <h2 class="text-light">About Macrostoma Aquatics</h2>
           </div>
-          <div class="col-md-6">
-            <ul class="list-unstyled text-light mb-5">
-              <li class="mb-2"><i class="bi bi-chevron-right text-primary" style="font-weight: bold;"></i>
-                <strong>Name:</strong>
-                <span class="ms-3">Macrostoma Aquatics</span>
-              </li>
-              <li class="mb-2"><i class="bi bi-chevron-right text-primary"></i> <strong>Founded:</strong>
-                <span class="ms-3">2023</span>
-              </li>
-              <li class="mb-2"><i class="bi bi-chevron-right text-primary"></i> <strong>Location:</strong> <span
-                  class="ms-3">Bandar
-                  Seri Begawan,
-                  Brunei Darussalam</span>
-              </li>
-              <li class="mb-2"><i class="bi bi-chevron-right text-primary"></i> <strong>Nature of business:</strong>
-                <span class="ms-3">Breeding
-                  and Conservation of Betta Macrostoma</span>
-              </li>
-            </ul>
-            <p class="text-light">Macrostoma Aquatics is a dedicated and passionate small-scale company committed to the
-              conservation and
-              preservation of the endangered Betta Macrostoma fish. Established with a profound love for aquatic life,
-              our mission is to contribute significantly to the conservation efforts of this unique and threatened
-              species while fostering awareness about the importance of biodiversity.</p>
+          <div class="row gx-5">
+            <div class="col-md-6">
+              <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/aRKQCljWuCM?si=8gjOSGBvyqdUpfsC" title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen></iframe>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-unstyled text-light mb-5">
+                <li class="mb-2"><i class="bi bi-chevron-right text-primary" style="font-weight: bold;"></i>
+                  <strong>Name:</strong>
+                  <span class="ms-3">Macrostoma Aquatics</span>
+                </li>
+                <li class="mb-2"><i class="bi bi-chevron-right text-primary"></i> <strong>Founded:</strong>
+                  <span class="ms-3">2023</span>
+                </li>
+                <li class="mb-2"><i class="bi bi-chevron-right text-primary"></i> <strong>Location:</strong> <span
+                    class="ms-3">Bandar
+                    Seri Begawan,
+                    Brunei Darussalam</span>
+                </li>
+                <li class="mb-2"><i class="bi bi-chevron-right text-primary"></i> <strong>Nature of business:</strong>
+                  <span class="ms-3">Breeding
+                    and Conservation of Betta Macrostoma</span>
+                </li>
+              </ul>
+              <p class="text-light">Macrostoma Aquatics is a dedicated and passionate small-scale company committed to
+                the
+                conservation and
+                preservation of the endangered Betta Macrostoma fish. Established with a profound love for aquatic life,
+                our mission is to contribute significantly to the conservation efforts of this unique and threatened
+                species while fostering awareness about the importance of biodiversity.</p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- END ABOUT US HERO -->
-    <!-- MISSION -->
-    <section class="about-us-content">
-      <div class="container">
-        <div class="card p-3 mb-5 about-us-quote">
+      <div class="container py-5">
+        <div class="card p-3 mb-5 about-us-quote" data-aos="fade-up">
           <div class="card-body">
             <h4 class="text-primary text-center fw-bold mb-3"><img class="me-2 align-center"
                 src="assets/icon/mission.svg" alt="">MISSION
             </h4>
             <p class="text-center">
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              The primary objective of our conservation programme is to contribute to the sustainability and well-being
-              of Betta Macrostoma in the aquarium hobby. By engaging experienced fishkeepers, we aim to foster a
-              community dedicated to the careful breeding and nurturing of these magnificent creatures.
+              At Macrostoma Aquatics, our mission is to play a pivotal role in the preservation of the Betta Macrostoma
+              species. We are committed to employing ethical breeding practices, conducting research, and raising
+              awareness to contribute actively to the global efforts aimed at the conservation of endangered aquatic
+              species. Through our endeavors, we strive to create a sustainable and harmonious environment for Betta
+              Macrostoma and inspire others to join us in safeguarding the rich biodiversity of our planet.
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
           </div>
         </div>
 
         <!-- VISION -->
-        <div class="card p-3 mb-5 about-us-quote">
+        <div class="card p-3 mb-5 about-us-quote" data-aos="fade-up">
           <div class="card-body">
             <h4 class="text-primary text-center fw-bold mb-3">
               <img class="me-2" src="assets/icon/vision.svg" alt=""><span style="vertical-align: middle;">VISION</span>
             </h4>
             <p class="text-center">
               <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              The primary objective of our conservation programme is to contribute to the sustainability and well-being
-              of Betta Macrostoma in the aquarium hobby. By engaging experienced fishkeepers, we aim to foster a
-              community dedicated to the careful breeding and nurturing of these magnificent creatures.
+              Macrostoma Aquatics envisions a future where the Betta Macrostoma fish thrives in its natural habitat,
+              free from the threat of extinction. We aspire to be a beacon of hope in the world of aquatic conservation,
+              setting a standard for responsible breeding practices and environmental stewardship. Through our efforts,
+              we aim to inspire a collective commitment to the well-being of our planet's diverse aquatic life,
+              fostering a sense of responsibility and appreciation for the delicate balance of ecosystems.
               <i class="bx bxs-quote-alt-right quote-icon-right"></i>
             </p>
           </div>
@@ -320,7 +336,7 @@
         <h4 class="text-primary text-center fw-bold mb-4"><img class="me-2 align-center"
             src="assets/icon/key_objectives.svg" alt=""><span style="vertical-align: middle;">KEY OBJECTIVES</span>
         </h4>
-        <div class="row gy-3 mb-5">
+        <div class="row gy-3 mb-5" data-aos="fade-up">
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="card">
               <div class="card-body">
@@ -344,9 +360,9 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="card">
               <div class="card-body">
-                <p class="text-secondary fw-bold mb-4">Education and Outreach</p>
-                <p>Engage with the community through educational programs, workshops, and outreach activities to promote
-                  awareness and understanding of aquatic conservation
+                <p class="text-secondary fw-bold mb-4">Research and Development</p>
+                <p>Conduct research to better understand the biology and behavior of Betta Macrostoma, contributing
+                  valuable insights to the scientific community.
                 </p>
               </div>
             </div>
@@ -354,9 +370,9 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="card">
               <div class="card-body">
-                <p class="text-secondary fw-bold mb-4">Research and Development</p>
-                <p>Conduct research to better understand the biology and behavior of Betta Macrostoma, contributing
-                  valuable insights to the scientific community.
+                <p class="text-secondary fw-bold mb-4">Education and Outreach</p>
+                <p>Engage with the community through educational programs, workshops, and outreach activities to promote
+                  awareness and understanding of aquatic conservation
                 </p>
               </div>
             </div>
@@ -367,13 +383,13 @@
         <h4 class="text-primary text-center fw-bold mb-4"><img class="me-2 align-center" src="assets/icon/core.svg"
             alt=""><span style="vertical-align: middle;">CORE VALUES</span>
         </h4>
-        <div class="row gy-3 d-flex justify-content-center">
+        <div class="row gy-3 d-flex justify-content-center" data-aos="fade-up">
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="card">
               <div class="card-body">
-                <p class="text-secondary fw-bold mb-4">Conservation Advocacy</p>
-                <p>Actively participate in and support conservation initiatives, raising awareness about the importance
-                  of preserving endangered aquatic species.
+                <p class="text-secondary fw-bold mb-4">Ethical Practices</p>
+                <p>Upholding the highest standards of ethical breeding practices to ensure the well-being of Betta
+                  Macrostoma.
                 </p>
               </div>
             </div>
@@ -381,9 +397,8 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="card">
               <div class="card-body">
-                <p class="text-secondary fw-bold mb-4">Education and Outreach</p>
-                <p>Engage with the community through educational programs, workshops, and outreach activities to promote
-                  awareness and understanding of aquatic conservation
+                <p class="text-secondary fw-bold mb-4">Sustainability</p>
+                <p>Implementing environmentally sustainable practices in all aspects of our operations.
                 </p>
               </div>
             </div>
@@ -391,9 +406,9 @@
           <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div class="card">
               <div class="card-body">
-                <p class="text-secondary fw-bold mb-4">Research and Development</p>
-                <p>Conduct research to better understand the biology and behavior of Betta Macrostoma, contributing
-                  valuable insights to the scientific community.
+                <p class="text-secondary fw-bold mb-4">Education and Awareness</p>
+                <p>Believing in the power of knowledge to drive positive change and advocating for the importance of
+                  biodiversity.
                 </p>
               </div>
             </div>
@@ -401,8 +416,9 @@
         </div>
       </div>
     </section>
+    <!-- END ABOUT US HERO -->
 
-    <!-- ======= Contact Section ======= -->
+    <!-- =======Conservation Section ======= -->
     <section id="conservation" class="conservation pt-0 mt-5">
       <div class="conservation-hero">
         <div class="container">
@@ -446,36 +462,227 @@
         <div class="conservation-item">
           <h4>2. Selection Process:</h4>
           <ul>
-            <li>Experienced fishkeepers with a passion for Betta Macrostoma are invited to apply for our programme.</li>
-            <li>Submit your application, sharing your expertise and commitment to responsible fishkeeping.</li>
+            <li>Our team carefully reviews applications to ensure that participants align with the principles of ethical
+              fishkeeping and conservation.</li>
+            <li>Selected participants will be notified and provided with detailed guidelines for the programme.</li>
           </ul>
         </div>
         <div class="conservation-item">
           <h4>3. Receive Betta Macrostoma Fry</h4>
           <ul>
-            <li>Experienced fishkeepers with a passion for Betta Macrostoma are invited to apply for our programme.</li>
-            <li>Submit your application, sharing your expertise and commitment to responsible fishkeeping.</li>
+            <li>Upon acceptance, participants will receive a batch of five Betta Macrostoma fry from Macrostoma Aquatics
+            </li>
+            <li>These fry are sourced from our conservation efforts and come with a genetic lineage aimed at promoting
+              diversity and health.</li>
           </ul>
         </div>
         <div class="conservation-item">
           <h4>4. Cultivate Responsible Fishkeeping</h4>
           <ul>
-            <li>Experienced fishkeepers with a passion for Betta Macrostoma are invited to apply for our programme.</li>
-            <li>Submit your application, sharing your expertise and commitment to responsible fishkeeping.</li>
+            <li>Participants play a crucial role in the conservation process by raising and caring for the Betta
+              Macrostoma fry.</li>
+            <li>Detailed care instructions and support will be provided by Macrostoma Aquatics to ensure the well-being
+              of the fry.</li>
           </ul>
         </div>
         <div class="conservation-item">
           <h4>5. Share Your Journey</h4>
           <ul>
-            <li>Experienced fishkeepers with a passion for Betta Macrostoma are invited to apply for our programme.
+            <li>We encourage participants to document and share their experiences through our community platform.
             </li>
+            <li>Your journey in nurturing Betta Macrostoma contributes to awareness and educates others on responsible
+              fishkeeping practices.</li>
+          </ul>
+        </div>
+        <h3 class="conservation-title mt-5">Benefits for participants</h3>
+        <div class="row gy-3 mb-5">
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="card">
+              <div class="card-body">
+                <p class="text-secondary fw-bold mb-4">Exclusive Access</p>
+                <p>Participants gain access to Betta Macrostoma fry, carefully selected and sourced for their genetic
+                  diversity.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="card">
+              <div class="card-body">
+                <p class="text-secondary fw-bold mb-4">Educational Resources</p>
+                <p>Macrostoma Aquatics provides comprehensive guidelines, educational materials, and ongoing support.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="card">
+              <div class="card-body">
+                <p class="text-secondary fw-bold mb-4">Community Engagement</p>
+                <p>Join a community of like-minded fishkeepers dedicated to Betta Macrostoma conservation.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="card">
+              <div class="card-body">
+                <p class="text-secondary fw-bold mb-4">Contribution to Conservation</p>
+                <p>Be a vital part of our collective efforts to preserve and promote responsible fishkeeping.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card p-3">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-8">
+                <h3 class="conservation-title mt-0">Apply Now</h3>
+                <p>Ready to embark on this conservation journey? Apply now to be a part of the Betta Macrostoma
+                  Conservation Programme. Together, let's make a positive impact on the conservation of this
+                  extraordinary species.</p>
+                <p>
+                  Apply Now and join Macrostoma Aquatics in preserving the beauty and diversity of Betta Macrostoma for
+                  generations to come!
+                </p>
+                <a href="#contact" class="btn btn-primary rounded-pill mt-3">Apply Now</a>
+              </div>
+              <div class="col-md-4 text-center">
+                <img class="img-fluid" src="./assets/icon/join_us.svg" alt="join-us">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Conservarion Section -->
+    <!-- =======Paludarium Section ======= -->
+    <section id="paludarium" class="paludarium pt-0 mt-5">
+      <div class="paludarium-hero">
+        <div class="container">
+          <div class="row py-5">
+            <div class="col-md-4">
+              <img class="text-end img-fluid" src="assets/img/paludarium.svg" alt="">
+            </div>
+            <div class="col-md-8">
+              <h3 class="fw-bold paludarium"><span class="text-primary">Paludarium Display
+                </span><br>for Organisations
+                Aquatics!</h3>
+              <p class="fw-bold py-4 mb-0">Elevate Your Business or Organization with a Bespoke Paludarium Display:
+                <br>Featuring
+                Betta Macrostoma by Macrostoma Aquatics
+              </p>
+              <p>At Macrostoma Aquatics, we specialize in creating captivating and sustainable paludarium
+                display tanks that showcase the mesmerizing beauty of Betta Macrostoma. Elevate the aesthetic appeal of
+                your space with a living work of art that not only captivates your audience but also promotes awareness
+                about responsible aquatics. Discover the unique blend of artistry, conservation, and education with our
+                Paludarium Display Programme.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container py-5">
+        <h3 class="paludarium-title">Why choose a Paludarium Display with Betta Macrostoma?</h3>
+        <div class="card mb-3">
+          <div class="card-body">
+            <p class="text-secondary fw-bold mb-3">1. Breathtaking Aesthetics</p>
+            <p>Immerse your clients, customers, or visitors in the enchanting beauty of a meticulously crafted
+              paludarium. Our displays feature lush aquatic vegetation, cascading waterfalls, and the striking Betta
+              Macrostoma, creating a visually stunning and serene environment.
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="card-body">
+            <p class="text-secondary fw-bold mb-3">2. Educational Outreach</p>
+            <p>The inclusion of Betta Macrostoma provides a unique opportunity to educate your audience about this
+              remarkable species and the importance of responsible aquatics. Engage your community with informative
+              signage and interactive elements to raise awareness about
+              conservation and ethical fishkeeping.
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="card-body">
+            <p class="text-secondary fw-bold mb-3">3. Customized Designs</p>
+            <p>Our team at Macrostoma Aquatics works closely with businesses and organizations to design a paludarium
+              display that complements your brand and space.
+              Tailor the size, theme, and elements of the paludarium to align seamlessly with your vision and
+              objectives.
+
+          </div>
+        </div>
+        <div class="card mb-3">
+          <div class="card-body">
+            <p class="text-secondary fw-bold mb-3">4. Promote Corporate Responsibility</p>
+            <p>Showcase your commitment to environmental sustainability and corporate responsibility by featuring a
+              living ecosystem that embodies conservation principles.
+              Demonstrate to your stakeholders that your organization values ethical practices and the well-being of
+              aquatic life.
+              creating a visually stunning and serene environment.
+          </div>
+        </div>
+
+        <h3 class="paludarium-title">How toapply?</h3>
+        <div class="paludarium-item">
+          <h4>1. Expression of interest</h4>
+          <ul>
+            <li>Experienced fishkeepers with a passion for Betta Macrostoma are invited to apply for our programme.</li>
             <li>Submit your application, sharing your expertise and commitment to responsible fishkeeping.</li>
           </ul>
+        </div>
+
+        <div class="paludarium-item">
+          <h4>2. Consultation and Planning</h4>
+          <ul>
+            <li>Our expert team will schedule a consultation to discuss your requirements and provide insights into the
+              design possibilities.</li>
+            <li>Collaboratively plan the paludarium display to align with your brand image and messaging.</li>
+          </ul>
+        </div>
+        <div class="paludarium-item">
+          <h4>3. Creation and Installation</h4>
+          <ul>
+            <li>Once the design is finalized, Macrostoma Aquatics will commence the creation of the paludarium.</li>
+            <li>Our team handles the entire installation process, ensuring a seamless and stress-free experience for
+              your business or organization.</li>
+          </ul>
+        </div>
+        <div class="paludarium-item">
+          <h4>4. Ongoinf Support</h4>
+          <ul>
+            <li>Macrostoma Aquatics provides ongoing support and maintenance services to ensure the longevity and
+              vitality of the paludarium display</li>
+            <li>Our team is committed to the well-being of the Betta Macrostoma and the overall success of the display.
+            </li>
+          </ul>
+        </div>
+        <div class="card p-3 mt-5">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-8">
+                <h3 class="conservation-title mt-0">Apply Now</h3>
+                <p class="">Ready to embark on this conservation journey? Apply now to be a part of the Betta Macrostoma
+                  Conservation Programme. Together, let's make a positive impact on the conservation of this
+                  extraordinary species.</p>
+                <p>
+                  Apply Now and join Macrostoma Aquatics in preserving the beauty and diversity of Betta Macrostoma for
+                  generations to come!
+                </p>
+                <a href="#contact" class="btn btn-primary rounded-pill mt-3">Apply Now</a>
+              </div>
+              <div class="col-md-4 text-center">
+                <img class="img-fluid" src="./assets/icon/join_us.svg" alt="join-us">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
 
+
     </section>
+    <!-- End Conservarion Section -->
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
@@ -483,9 +690,11 @@
         <div class="section-title">
           <h2>Contact</h2>
         </div>
-
-        <div class="row mt-1">
-
+        <p class="mb-5">Join Macrostoma Aquatics on our journey to make a lasting impact on the conservation of Betta
+          Macrostoma and
+          the preservation of our planet's precious aquatic ecosystems. Together, let's create a sustainable future for
+          generations to come.</p>
+        <div class="row py-5">
           <div class="col-lg-4">
             <div class="info">
               <div class="address">
@@ -540,24 +749,16 @@
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section>
+    <!-- End Contact Section -->
 
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <h3>Macrostoma Aquatics</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
-      <div class="social-links">
-        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-      </div>
       <div class="copyright">
-        &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Macrostoma Aquatics</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
@@ -582,6 +783,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
 
